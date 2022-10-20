@@ -1,7 +1,30 @@
 import React from "react";
-
+import postData from "../../utility/post";
+import DesktopGroupController from "../DesktopGroupController/DesktopGroupController";
+import ExtraInfo from "../ExtraInfo/ExtraInfo";
+import MobileGroupController from "../MobileGroupController/MobileGroupController";
+import PostCard from "../PostCard/PostCard";
+import "./GroupBody.css";
 const GroupBody = () => {
-  return <div>group</div>;
+  return (
+    <div>
+      <div className="container">
+        <DesktopGroupController />
+        <MobileGroupController />
+
+        <div className="row gx-5">
+          <div className="col-md-8">
+            {postData?.map((post, index) => (
+              <PostCard key={index} post={post} />
+            ))}
+          </div>
+          <div className="col-md-4">
+            <ExtraInfo />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default GroupBody;

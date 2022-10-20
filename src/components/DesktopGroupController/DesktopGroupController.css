@@ -1,0 +1,16 @@
+.btn_action_write_post {
+  background-color: transparent;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: #edeef0;
+}
+.btn_action_join_group {
+  background-color: transparent;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: #2f6ce5;
+  color: #fff;
+  margin-left: 15px;
+}

@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div className="main_header">
-      <div className="our_container">
+      <div className="container-fluid py-3">
         <div className="row d-flex align-items-center">
           <div className="logo col ">
             <img src={Logo} alt="" />

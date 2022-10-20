@@ -39,6 +39,14 @@
   border-radius: 100%;
 }
 
+.header_wrapper {
+  width: 100%;
+  max-width: 2000px;
+  padding: 12px 30px;
+
+  margin: auto;
+}
+
 /* Response  */
 @media (max-width: 991px) {
   .search_box {

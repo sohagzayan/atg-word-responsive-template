@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
 import { BiCalendarEvent } from "react-icons/bi";
@@ -7,8 +7,11 @@ import image from "../../assets/metup card.png";
 import userImage from "../../assets/user3.png";
 import { BsFillShareFill } from "react-icons/bs";
 import "./MeetupCard.css";
+import PostController from "../PostController/PostController";
 
 const MeetupCard = () => {
+  const [showPostController, setShowPostController] = useState(false);
+
   return (
     <div>
       <div className="card mb-5">
@@ -19,8 +22,16 @@ const MeetupCard = () => {
             <h4 className="mb-3">
               Finance & Investment Elite Social Mixer @Lujiazui
             </h4>
-            <h4>
-              <HiOutlineDotsHorizontal />
+            <h4 className="position-relative">
+              <span
+                onClick={() => setShowPostController((prev) => !prev)}
+                className={
+                  showPostController ? "postcontroler active" : "postcontroler"
+                }
+              >
+                <HiOutlineDotsHorizontal />
+              </span>
+              {showPostController && <PostController />}
             </h4>
           </div>
           <div className="d-flex  align-items-center mb-3">
@@ -41,7 +52,7 @@ const MeetupCard = () => {
             </div>
             <div className="d-flex align-items-center gap-4">
               <h6 className="">
-                <AiOutlineEye className="fs-5 " />
+                <AiOutlineEye className="fs-5 mx-2" />
                 1.4k views
               </h6>
               <h6 className="shairIcons">

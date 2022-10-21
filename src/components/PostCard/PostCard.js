@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PostCard.css";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
 import { BsFillShareFill } from "react-icons/bs";
+import PostController from "../PostController/PostController";
 
 const PostCard = ({ post }) => {
   const { title, image, description, view, category, user } = post;
+  const [showPostController, setShowPostController] = useState(false);
+
   return (
     <div>
       <div className="card mb-5">
@@ -14,8 +17,16 @@ const PostCard = ({ post }) => {
           <h6 className="mb-3 d-inline-block">{category}</h6>
           <div className="d-flex justify-content-between">
             <h4 className="mb-3">{title}</h4>
-            <h4>
-              <HiOutlineDotsHorizontal />
+            <h4 className="position-relative">
+              <span
+                onClick={() => setShowPostController((prev) => !prev)}
+                className={
+                  showPostController ? "postcontroler active" : "postcontroler"
+                }
+              >
+                <HiOutlineDotsHorizontal />
+              </span>
+              {showPostController && <PostController />}
             </h4>
           </div>
           <p>{description}</p>
@@ -26,7 +37,7 @@ const PostCard = ({ post }) => {
             </div>
             <div className="d-flex align-items-center gap-4">
               <h6 className="">
-                <AiOutlineEye className="fs-5 " />
+                <AiOutlineEye className="fs-5 mx-2 " />
                 {view}k views
               </h6>
               <h6 className="shairIcons">

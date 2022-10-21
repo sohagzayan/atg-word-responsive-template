@@ -25,3 +25,11 @@ li {
 .main_header .container-fluid {
   max-width: 1480px;
 }
+
+.postcontroler {
+  cursor: pointer;
+}
+
+.postcontroler.active {
+  color: #e56135;
+}

@@ -39,7 +39,7 @@ const JobPostCard = () => {
                 <AiOutlineEye className="fs-5 " />
                 1.4k views
               </h6>
-              <h6 className="">
+              <h6 className="shairIcons">
                 <BsFillShareFill className="fs-5 " />
               </h6>
             </div>

@@ -8,10 +8,10 @@
 
 ## Project Description
 
-1/ This is atg world and Social Group app
-1/ This app user can create account emaill and password
-3/ user can join this group and post there special post or job post etc
-4/ that web site is fully Responsive
+- This is atg world and Social Group app
+- This app user can create account emaill and password
+- user can join this group and post there special post or job post etc
+- that web site is fully Responsive
 
 ## Development
 

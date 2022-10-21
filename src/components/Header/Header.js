@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/whole.png";
 import { AiOutlineSearch } from "react-icons/ai";
+import { RiAccountCircleLine } from "react-icons/ri";
 import "./Header.css";
 import AnimatedHamburgerMenu from "../AnimatedHamburgerMenu/AnimatedHamburgerMenu";
-const Header = () => {
+const Header = ({ setShowAccountCreateModal }) => {
   /** Show Searchber Hamber Condetion */
   const [hamberger, setHamberger] = useState(false);
 
@@ -17,7 +18,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="main_header">
+    <div className="main_header sticky-top ">
       <div className="container-fluid py-3">
         <div className="row d-flex align-items-center">
           <div className="logo col ">
@@ -40,6 +41,12 @@ const Header = () => {
           </div>
           <div className="accountCreate col d-flex justify-content-end">
             <div className="d-flex align-items-center">
+              <span
+                onClick={() => setShowAccountCreateModal((prev) => !prev)}
+                className="d-lg-none d-block AccountIcons"
+              >
+                <RiAccountCircleLine className="fs-1 " />
+              </span>
               <span className="d-lg-none d-block ">
                 <AnimatedHamburgerMenu
                   hamberger={hamberger}
@@ -47,7 +54,13 @@ const Header = () => {
                 />
               </span>
               <h6 className="d-lg-block d-none">
-                Create account. <a href="/">It’s free!</a>
+                Create account.{" "}
+                <span
+                  className="itsFree"
+                  onClick={() => setShowAccountCreateModal((prev) => !prev)}
+                >
+                  It’s free!
+                </span>
               </h6>
             </div>
           </div>

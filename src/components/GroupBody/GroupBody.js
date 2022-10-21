@@ -14,15 +14,15 @@ const GroupBody = () => {
         <DesktopGroupController />
         <MobileGroupController />
 
-        <div className="row gx-5">
-          <div className="col-md-8">
+        <div className="row gx-lg-5">
+          <div className="col-lg-8">
             {postData?.map((post, index) => (
               <PostCard key={index} post={post} />
             ))}
             <MeetupCard />
             <JobPostCard />
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4 d-lg-block d-none ">
             <ExtraInfo />
           </div>
         </div>

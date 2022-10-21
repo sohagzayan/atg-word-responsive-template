@@ -1,6 +1,7 @@
 .main_header {
+  background-color: #fff;
+  backdrop-filter: blur(20px);
 }
-
 .search_box {
   background-color: #f2f2f2;
   position: relative;
@@ -10,7 +11,7 @@
   color: #7a7a7a;
   position: absolute;
   top: 2px;
-  left: 15px;
+  left: 10px;
 }
 .search_box > input {
   width: 100%;
@@ -46,7 +47,14 @@
 
   margin: auto;
 }
-
+.AccountIcons {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.itsFree {
+  color: #2f6ce5;
+  cursor: pointer;
+}
 /* Response  */
 @media (max-width: 991px) {
   .search_box {
@@ -55,12 +63,13 @@
     left: 0;
     width: 100%;
     border-radius: 0;
-    padding: 30px 0;
+    padding: 15px 5px;
     transform: translateY(-100px);
     transition: all 0.2s ease-in;
   }
   .search_box.active {
     transform: translateY(0px);
+    z-index: 30;
   }
   .search_box input {
     font-weight: bold;
@@ -68,7 +77,7 @@
 
   .search_box > h4 {
     top: 50%;
-    left: 3%;
+    left: 6%;
     transform: translate(-50%, -50%);
   }
 }

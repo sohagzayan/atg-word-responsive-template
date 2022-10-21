@@ -1,0 +1,10 @@
+.social_btn {
+  background: #ffffff;
+  border: 0.6px solid #d9d9db;
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px 6px;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 10px;
+}

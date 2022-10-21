@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
 import { BiDotsHorizontalRounded, BiShoppingBag } from "react-icons/bi";
 import { HiOutlineLocationMarker } from "react-icons/hi";

@@ -30,16 +30,18 @@ const CreateAccount = ({
           </h5>
           <div>
             <form action="" className="account_create_box">
-              <h3 className="d-flex justify-content-between">
-                <h3>{signInFace ? "Create Account" : "Sign In"}</h3>
+              <h4 className="d-flex justify-content-between">
+                <span className="d-block">
+                  {signInFace ? "Create Account" : "Sign In"}
+                </span>
 
-                <h4
+                <span
                   onClick={() => setShowAccountCreateModal((prev) => !prev)}
                   className=" d-lg-none d-block mobileCloseModal"
                 >
                   <AiOutlineClose />
-                </h4>
-              </h3>
+                </span>
+              </h4>
               {signInFace && (
                 <div>
                   <input type="text" placeholder="First Name" />

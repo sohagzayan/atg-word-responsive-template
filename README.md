@@ -1,12 +1,42 @@
-# Getting Started with Create React App
+# ATG World Fully Responsive
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project URL [ATG WORD](https://atg-word-responsive-template.vercel.app/).
 
-## Available Scripts
+## Preview
 
-In the project directory, you can run:
+![plot](./src/assets/previw.png)
 
-### `npm start`
+## Project Description
+
+1/ This is atg world and Social Group app
+1/ This app user can create account emaill and password
+3/ user can join this group and post there special post or job post etc
+4/ that web site is fully Responsive
+
+## Development
+
+Technoligies used in this project are given below
+
+### Front-End
+
+. React
+. React Router DOM
+. React Icons
+. Bootstrap 5
+
+## Deployment
+
+. Client Side Deploy On Vercel
+
+## Project Run Command Client-Side
+
+. yarn
+. yarn start
+
+#### Or
+
+. npm install
+. npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -68,4 +98,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # atg-word-responsive-template

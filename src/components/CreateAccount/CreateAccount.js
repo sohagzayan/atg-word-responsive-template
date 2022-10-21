@@ -21,7 +21,7 @@ const CreateAccount = ({
           Let's learn, share & inspire each other with our passion for computer
           engineering. Sign up now 🤘🏼
         </p>
-        <div className="d-lg-flex justify-lg-content-between account_creation_content gap-lg-4">
+        <div className="d-lg-flex justify-content-between account_creation_content gap-lg-4">
           <h5
             onClick={() => setShowAccountCreateModal((prev) => !prev)}
             className="close_modal"
@@ -32,7 +32,7 @@ const CreateAccount = ({
             <form action="" className="account_create_box">
               <h4 className="d-flex justify-content-between">
                 <span className="d-block">
-                  {signInFace ? "Create Account" : "Sign In"}
+                  {signInFace ? "Create Account" : "Welcome back!"}
                 </span>
 
                 <span
@@ -54,7 +54,7 @@ const CreateAccount = ({
               {signInFace && (
                 <input type="password" placeholder="Confirm Password" />
               )}
-              <div className="d-flex justify-content-between align-items-center">
+              <div className="d-flex justify-content-between align-items-center my-3">
                 <button className="sig_up_button">Create Account</button>
                 <h6
                   onClick={() => setSignInFace((prev) => !prev)}
@@ -76,14 +76,16 @@ const CreateAccount = ({
               {!signInFace && (
                 <h5 className="text-center mt-3">Forgot Password?</h5>
               )}
-              <small className="d-lg-none d-block mt-1">
-                By signing up, you agree to our Terms & conditions, Privacy
-                policy
-              </small>
+              {signInFace && (
+                <small className="d-lg-none d-block mt-2">
+                  By signing up, you agree to our Terms & conditions, Privacy
+                  policy
+                </small>
+              )}
             </div>
           </div>
           <div className="d-lg-block d-none">
-            <h6>
+            <h6 className="text-end">
               Already have an account?{" "}
               <span
                 onClick={() => setSignInFace((prev) => !prev)}

@@ -1,0 +1,12 @@
+.filterCategoryField select {
+  border: none !important;
+  background-color: #f1f3f5;
+  font-weight: bold;
+  outline: none;
+}
+.filterCategoryField {
+  background-color: #f1f3f5;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 7px;
+}

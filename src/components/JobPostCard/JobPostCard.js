@@ -6,6 +6,7 @@ import userImage from "../../assets/user3.png";
 import { BsFillShareFill } from "react-icons/bs";
 import "./JobPostCard.css";
 import PostController from "../PostController/PostController";
+
 const JobPostCard = () => {
   const [showPostController, setShowPostController] = useState(false);
   return (
